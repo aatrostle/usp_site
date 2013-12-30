@@ -1,27 +1,36 @@
-<h1>Listing posts</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Listing posts</h1>
+    </div>
+  </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
 
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+        <tbody>
+          <% @posts.each do |post| %>
+            <tr>
+              <td><%= post.title %></td>
+              <td><%= link_to 'Show', post %></td>
+              <td><%= link_to 'Edit', edit_post_path(post) %></td>
+              <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
 
-<br>
+      <%= button_to 'New Post', new_post_path, method: :get, class: "btn btn-primary" %>
+    </div>
+  </div>
 
-<%= link_to 'New Post', new_post_path %>
+</div>

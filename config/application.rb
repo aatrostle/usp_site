@@ -13,6 +13,10 @@ Bundler.require(:default, Rails.env)
 
 module UspSite
   class Application < Rails::Application
+
+    # Add Bower components to asset pipeline
+    config.assets.paths << Rails.root.join('app', 'assets', 'components')
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

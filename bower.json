@@ -1,0 +1,6 @@
+{
+  "name": "USP Site",
+  "dependencies": {
+    "bootstrap": "~> 3.0"
+  }
+}
