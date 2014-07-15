@@ -1,6 +1,6 @@
 {
   "name": "USP Site",
   "dependencies": {
-    "bootstrap": "~> 3.0"
+    "normalize-css": "https://github.com/necolas/normalize.css.git#~3.0.1"
   }
 }
