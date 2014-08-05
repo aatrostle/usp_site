@@ -11,3 +11,4 @@
 // about supported directives.
 //
 //= require angular
+//= require_tree .
