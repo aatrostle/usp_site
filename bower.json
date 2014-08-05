@@ -1,6 +1,7 @@
 {
   "name": "USP Site",
   "dependencies": {
-    "normalize-css": "https://github.com/necolas/normalize.css.git#~3.0.1"
+    "normalize-css": "https://github.com/necolas/normalize.css.git#~3.0.1",
+    "angular": "~1.2.21"
   }
 }
